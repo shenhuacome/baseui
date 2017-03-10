@@ -104,40 +104,40 @@
         evt.preventDefault();
     }
 
-    // if(ios){
-    // 	document.addEventListener("DOMContentLoaded", ready, false);
-    // 	document.addEventListener("touchmove", evt, false);
+    if(ios){
+    	document.addEventListener("DOMContentLoaded", ready, false);
+    	document.addEventListener("touchmove", evt, false);
 
-    // 	function ready(){
-    // 		var container = document.getElementsByClassName("content")[0];
-    // 		container.addEventListener("touchmove", function(evt){
+    	function ready(){
+    		var container = document.getElementsByClassName("content")[0];
+    		container.addEventListener("touchmove", function(evt){
 
-    // 			evt.stopPropagation();
-    // 		}, false);
+    			evt.stopPropagation();
+    		}, false);
 
-    // 	}
-    // }
+    	}
+    }
 
-    // $(window).on('scroll',function(){
-    // 	if($('body').scrollTop()>0){
-    // 		$(".content").addClass('scroll');
-    // 		$(".header").css({top:$('body').scrollTop()+'px'})
-    // 	}else{
-    // 		$(".content").removeClass('scroll');
-    // 		$(".header").css({top:0+'px'})
-    // 	}
+    $(window).on('scroll',function(){
+    	if($('body').scrollTop()>0){
+    		$(".content").addClass('scroll');
+    		$(".header").css({top:$('body').scrollTop()+'px'})
+    	}else{
+    		$(".content").removeClass('scroll');
+    		$(".header").css({top:0+'px'})
+    	}
 
 
-    // })
+    })
 
-    // $(window).on('scroll',function(){
-    // 	if($('body').scrollTop()>0){
+    $(window).on('scroll',function(){
+    	if($('body').scrollTop()>0){
 
-    // 		$(".header").css({top:$('body').scrollTop()+'px'})
-    // 	}else{
+    		$(".header").css({top:$('body').scrollTop()+'px'})
+    	}else{
 
-    // 		$(".header").css({top:0+'px'})
-    // 	}})
+    		$(".header").css({top:0+'px'})
+    	}})
     </script>
 </head>
 
