@@ -1,0 +1,13 @@
+a{color: #5093e1}
+.header{    height: 40px;
+    background: #5093e1;
+    position: relative;
+    z-index: 100;
+    border-bottom: 1px solid #4973c1;font-size: 16px;color: #fff;line-height: 40px; padding-left: 20px;}
+.main{}
+.footer{ background: #f9f9f9;text-align: center;padding: 10px 0}
+.title{ height: 33px; line-height: 33px; padding:0 20px; background: #f9f9f9;margin-bottom: 10px}
+.content{padding: 0 20px;margin-bottom: 10px}
+.content ul li{margin-bottom: 5px;}
+
+.split-line{margin: 10px 20px}

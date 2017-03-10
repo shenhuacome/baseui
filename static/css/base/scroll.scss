@@ -1,0 +1,21 @@
+/*sroll*/
+::-webkit-scrollbar-track-piece{
+background-color:#eff1f2;
+-webkit-border-radius:0;
+}
+::-webkit-scrollbar{
+width:8px;
+height:8px
+}
+::-webkit-scrollbar-thumb{
+background-color:#8b96a8;
+border:solid 1px #8b96a8;
+border-radius:0px;
+}
+::-webkit-scrollbar-thumb:hover{
+background-color:#8b96a8;
+}
+::-webkit-scrollbar-arrow {
+color:#F00;
+background:#0F0;
+}

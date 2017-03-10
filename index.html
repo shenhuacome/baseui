@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+	<title>常用控件演示</title>
+
+	<link rel="stylesheet" type="text/css" href="static/css/ui.css"/>
+
+	<link rel="stylesheet" type="text/css" href="demo.css">
+
+	<script type="text/javascript" src="static/js/jquery.min.js"></script>
+	<!--文件引入js-->
+	<script type="text/javascript" src="static/js/include.js"></script>
+
+
+	<!--组件js-->
+	<!--下拉框、单选复选、tab、placeholder-->
+	<script type="text/javascript" src="static/js/is/is.min.js"></script>
+	<!--日历-->
+	<script type="text/javascript" src="static/js/laydate/laydate.js"></script>
+	<!--弹出框-->
+	<script type="text/javascript" src="static/js/layer/layer.js"></script>
+
+	<!--grid-->
+	<script type="text/javascript" src="static/js/jquery-easyui/easyloader.js"></script>
+
+
+
+
+
+</head>
+<body>
+	<div load-page="header.html" class="header"></div>
+	<div class="main cle">
+		<div class="title">按钮(buttons)</div>
+		<div class="content">
+								<button class="hs-ui-btn hs-blue-btn" type="button" >蓝色按钮</button>
+								<button class="hs-ui-btn hs-red-btn" type="button">红色按钮</button>
+								<button class="hs-ui-btn hs-green-btn" type="button">绿色按钮</button>
+								 <button class="hs-ui-btn hs-gray-btn" type="button">灰色按钮</button>
+								<button class="hs-ui-btn hs-border-btn" type="button">边框按钮</button>
+								<a href="http://www.baidu.com" class="hs-ui-btn hs-blue-btn">a链接按钮</a>
+
+								<br/>
+								<br/>
+
+                                <button class="hs-ui-btn hs-blue-btn hs-ui-btn-small">蓝色小号按钮</button>
+                                
+                                <button class="hs-ui-btn hs-red-btn hs-ui-btn-small">红色小号按钮</button>
+                                
+                                <button class="hs-ui-btn hs-green-btn hs-ui-btn-small">绿色小号按钮</button>
+                               
+                                <button class="hs-ui-btn hs-gray-btn hs-ui-btn-small">灰色小号按钮</button>
+
+                                <button class="hs-ui-btn hs-border-btn hs-ui-btn-small">边框小号按钮</button>
+                                
+                                <a href="http://www.baidu.com" class="hs-ui-btn hs-blue-btn hs-ui-btn-small">a链接小号按钮</a> 
+
+							<br/>
+								<br/>
+
+							<button class="hs-ui-btn hs-blue-btn" type="button" disabled>蓝色按钮禁用</button>
+		</div>
+
+
+		<div class="split-line"></div>
+
+		<div class="title">输入框(input)</div>
+		<div class="content">
+			<ul>
+				<li>正常：<input type="text" class="hs-ui-input ui-w-200" name="" value="" placeholder="请输入"></li>
+				<li>只读：<input type="text" class="hs-ui-input ui-w-200" readonly disabled="disabled" name="" value="" placeholder="请输入"></li>
+				
+			</ul>
+								
+		</div>
+
+		<div class="split-line"></div>
+
+		<div class="title">textarea</div>
+		<div class="content">
+			<ul>
+				
+				<li><textarea class="hs-ui-textarea" placeholder="请输入">2423</textarea> </li>
+			</ul>
+								
+		</div>
+
+
+		<div class="split-line"></div>
+
+		<div class="title">下拉框(select)</div>
+		<div class="content">
+			<ul>
+				<li>正常：<select class="hs-ui-select"><option>下拉框</option></select></li>
+				<li>只读：<select class="hs-ui-select" disabled="disabled"><option>下拉框被禁用</option></select></li>
+			</ul>
+								
+		</div>
+	
+
+		<div class="split-line"></div>
+
+		<div class="title">复选单选(radio&checkbox)</div>
+		<div class="content">
+			<ul>
+				<li>性别：<input type="radio" name="a" value="" id="a"><label for="a">男</label> <input type="radio" id="b" name="a" value=""><label for="b">女</label></li>
+				<li>
+					爱好：<input type="checkbox" name="b" value="" id="a1"><label for="a1">唱歌</label> <input type="checkbox" id="b1" name="b" value=""><label for="b1">跳舞</label> <input type="checkbox" id="c1" name="b" value=""><label for="c1">上网</label></li>
+				</li>
+			</ul>
+								
+		</div>
+
+
+		<div class="split-line"></div>
+
+		<div class="title">弹出框(dailog) api:<a href="http://layer.layui.com/" target="_blank">http://layer.layui.com/</a></div>
+		<div class="content">
+			<ul>
+				<li><a href="javascript:;" id="dailog-html">弹出带html的</a></li>
+				<li><a href="javascript:;" id="dailog-iframe">弹出带iframe的</a></li>
+			</ul>
+								
+		</div>
+
+		<div class="split-line"></div>
+
+		<div class="title">日历(datepicker) api:<a href="http://laydate.layui.com/" target="_blank">http://laydate.layui.com/</a></div>
+		<div class="content">
+			<ul>
+				<li><input type="text" class="hs-ui-input ui-w-200" name="" id="date" value="" placeholder="请选择日期"></li>
+			</ul>
+								
+		</div>
+
+
+		<div class="split-line"></div>
+
+		<div class="title">tab页(tab) </div>
+		<div class="content">
+			<div class="hs-ui-tab">
+                                <div class="hs-ui-tab-items">
+                                    <ul>
+                                        <li class="ui-tab-on">
+                                            <a href="javascript:;">TA1</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">TA2</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="hs-ui-tab-contents">
+                                    <div class="hs-ui-tab-content">
+                                       1
+                                    </div>
+                                    <div class="hs-ui-tab-content hs-ui-tab-content-hide">
+                                       2
+                                    </div>
+                                </div>
+                            </div>
+
+								
+		</div>
+		
+
+	</div>
+
+	<div id="grid"></div>
+	<div load-page="footer.html" class="footer">
+		
+	</div>
+
+	<script type="text/javascript">
+	(function($){
+		$(function(){
+			//下拉框美化
+			$("select").chosen();
+
+
+			//美化复选单选
+			$("input").iCheck({checkboxClass: 'icheckbox_base', radioClass: 'iradio_base'});
+
+			//弹出框
+			$("#dailog-html").on('click',function(){
+				layer.open({
+					title:"弹出带html的",
+					content:"12312312"
+				})
+			});
+
+			$("#dailog-iframe").on('click',function(){
+				layer.open({
+					type:2,
+					area:['660px','400px'],
+					title:"弹出带iframe的",
+					content:"http://www.baidu.com"
+				})
+			});
+
+			//日历
+			$("#date").on('focus',function(){
+				laydate();
+			})
+
+
+			//tab
+			$(".hs-ui-tab").tabs();
+
+			//grid
+			var tableGrid={
+
+			 dataTable:function(){
+
+        	function formatAction(val,row){
+        		return "<a href='detail.html?id="+val+"' class='action-see'></a>";//格式化操作项
+               
+        	}
+
+        	var _that=this;
+        	//使用easyui grid控件
+        	using('datagrid', function(){
+				var grid=$('#grid').datagrid({
+					width:'auto',
+					height:'300px',
+					pagination:true,
+					loadMsg:"数据处理中...",
+					striped:true,
+					showFooter:true, 
+					pageSize:10,
+					url: 'datagrid_data.json',//数据源，生产环境请替换
+					method: 'get',
+					onLoadSuccess: function(){},
+					onLoadError:function(){
+						layer.msg('请求失败，请重试',{time:1000});
+		
+					},
+					onBeforeLoad:function(){
+						
+					},
+
+					columns:[[
+						{field:'ck',checkbox:true,width:50},
+						{field:'cid',title:'基金账号',width:120,sortable:"true"},
+						{field:'cname',title:'客户名称',width:200,nowrap:"false"},
+						{field:'csale',title:'销售商',width:100,align:'center'},
+						{field:'cshop',title:'网店',width:120,align:'center'},
+						{field:'cacco',title:'交易账号',width:100,align:'center'},
+						{field:'cdate',title:'确认日期',width:100,align:'center'},
+						{field:'ctanum',title:'TA确认号',width:120},
+						{field:'ctanum1',title:'TA确认号1',width:120},
+						{field:'ctanum2',title:'TA确认号2',width:120},
+						{field:'ctanum3',title:'TA确认号2',width:120},
+						{field:'ctanum4',title:'TA确认号2',width:120}
+						
+					]],
+					frozenColumns:[[   
+       					 {field:'caction',title:'操作',width:70,align:'center',formatter:formatAction},       
+    				]]
+					
+				});
+			var pager = grid.datagrid('getPager');
+			pager.pagination({layout:['first','prev','manual','next','last','list'],
+				beforePageText: '第',
+		        afterPageText: '页 共 {pages} 页',
+		        displayMsg: '共{total}条数据'
+				});
+
+
+			
+
+			});
+
+			
+			
+		
+
+        }
+			}
+
+			tableGrid.dataTable();
+
+
+
+
+		});
+	})(jQuery);
+	</script>
+</body>
+</html>
